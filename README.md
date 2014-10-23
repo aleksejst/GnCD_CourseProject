@@ -32,6 +32,8 @@ The filtered data was then supposed to be aggregated to average values for each 
 R script is included in this repository as: _run_analysis.R_
 
 Dataset containing aggregated results is included in this repository: _DataTidy.txt_
+>_NOTE:_ If you want to import the dataset to R, the following code is suggested: _dataTidy <- read.table(".\\DataTidy.txt", header=TRUE)_ 
+
 
 
 ## Data Processing
