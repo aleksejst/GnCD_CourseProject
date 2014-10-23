@@ -29,8 +29,8 @@ The data from the experiment, was supposed to be merged into a single dataset, w
 
 The filtered data was then supposed to be aggregated to average values for each activity and each subject. The resulting dataset was supposed to be saved in a .txt file.
 
-R script is included in this repository as: run_analysis.R
-Dataset containing aggregated results is included in this reporitory: DataTidy.txt
+R script is included in this repository as: _run_analysis.R_
+Dataset containing aggregated results is included in this reporitory: _DataTidy.txt_
 
 
 ## Data Processing
