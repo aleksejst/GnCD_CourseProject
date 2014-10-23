@@ -35,25 +35,30 @@ Dataset containing aggregated results is included in this reporitory: DataTidy.t
 
 ## Data Processing
 
-Preparation for running run_analysis.R
-• Download source data
-• Extract files from archive
-• Move the extracted 'UCI HAR Dataset' folder to R work directory
+Preparation for running run_analysis.R:
+
+* Download source data
+* Extract files from archive
+* Move the extracted 'UCI HAR Dataset' folder to R work directory
+
 
 This is the process flow of the run_analysis.R
-• Paths to data elements are assigned to variables (meant to make potential alterations to paths easier in case path variables are frequently re-used in the code)
-• Data (including feature-vector, subject and Activity) is extracted from 'Train' section of the source data
-	0 Subject data column is appended to the Feature-vector dataframe
-	0 Activity data column is appended to the Feature-vector dataframe
-• Data (including feature-vector, subject and Activity) is extracted from 'Test' section of the source data
-	0 Subject data column is appended to the Feature-vector dataframe
-	0 Activity data column is appended to the Feature-vector dataframe
-• Both dataframes are merged. This is only done after the addition of the abovementioned columns in order to preserve the original sorting
-• List of 'features' - data variable names is imported
-• Dataframe tables are renamed to represnt 'features' as variable names
-• List of 'Activity Labels' - activity names is imported
-• Activity identifiers in the Activity column are replaced with the imported activity labels
-• Dataframe is subsetted to only contain variables that represent mean or standard deviation of the readings
-• Mean values of each cariable are calculated for each subject/activity group and stored in a new datframe
-• Subject and Activity columns are added to resulting dataframe
+
+* Paths to data elements are assigned to variables (meant to make potential alterations to paths easier in case path variables are frequently re-used in the code)
+* Data (including feature-vector, subject and Activity) is extracted from 'Train' section of the source data
+ * Subject data column is appended to the Feature-vector dataframe
+ * Activity data column is appended to the Feature-vector dataframe
+* Data (including feature-vector, subject and Activity) is extracted from 'Test' section of the source data
+ * Subject data column is appended to the Feature-vector dataframe
+ * Activity data column is appended to the Feature-vector dataframe
+* Both dataframes are merged. This is only done after the addition of the abovementioned columns in order to preserve the original sorting
+* List of 'features' - data variable names is imported
+* Dataframe tables are renamed to represnt 'features' as variable names
+* List of 'Activity Labels' - activity names is imported
+* Activity identifiers in the Activity column are replaced with the imported activity labels
+* Dataframe is subsetted to only contain variables that represent mean or standard deviation of the readings
+* Mean values of each cariable are calculated for each subject/activity group and stored in a new datframe
+* Subject and Activity columns are added to resulting dataframe
+
+
 
