@@ -33,7 +33,8 @@ R script is included in this repository as: _run_analysis.R_
 
 Dataset containing aggregated results is included in this repository: _DataTidy.txt_
 >__NOTE:__ If you want to import the dataset to R, the following code is suggested:
->_dataTidy <- read.table(".\\DataTidy.txt", header=TRUE)_ 
+
+`dataTidy <- read.table(".\\DataTidy.txt", header=TRUE)` 
 
 
 
