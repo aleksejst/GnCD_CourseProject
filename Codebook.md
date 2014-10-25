@@ -1,13 +1,13 @@
 # Codebook: DataTidy.txt
 
-This document describes the original data and manipulations perfomed on it by the author to produce the __Tidy Data__ stored in the _DataTidy.txt_ 
+This document describes the original data and manipulations performed on it by the author to produce the __Tidy Data__ stored in the _DataTidy.txt_ 
 
 
 ## Original Data
 
 Original data was obtained in form of an archive package containing multiple files in several subfolders. 
 
-Here is the list of files and description obtained from the _README.txt_ located int he archive. Please refer to the _README.txt_ for more details:
+Here is the list of files and description obtained from the _README.txt_ located in the archive. Please refer to the _README.txt_ for more details:
 
 * 'README.txt'
 * 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -45,26 +45,26 @@ Data located in the _Inertial Signals_ folders was not used.
 
 ## Data Manipulation
 
-Data was extracted from the abovementioned files and then combined in a single dataframe. Efforts were made to preserve correct order of the data fileds. Please refer to _Readme.MD_ included in this repository for more details on the R script used to manipulate data. 
+Data was extracted from the abovementioned files and then combined in a single dataframe. Efforts were made to preserve correct order of the data fields. Please refer to _Readme.MD_ included in thisrepository for more details on the R script used to manipulate data. 
 
 The resulting dataframe contained 10299 observations of 563 Variables.
 
 Only columns containing records of the variables related to __mean__ and __standard deviation__ of certain readings were used to produce the tidy data. Filtering of the variables was based on their names. 
 
-The following patterns were used as a filetring criteria
+The following patterns were used as a filtering criteria
 *Standard Deviation:
  * std()
 *Mean:
  * mean()
  * meanFreq()
 
-Filtering reducted the number of variables to 81.
+Filtering reduced the number of variables to 81.
 
-Aggregation was performed by calculating mean values of each variable for each Subject/Activity group. There was a total of 30 subjects and 6 activites, resulting in 180 Subject/Activity groups.
+Aggregation was performed by calculating mean values of each variable for each Subject/Activity group. There was a total of 30 subjects and 6 activities, resulting in 180 Subject/Activity groups.
 
 The final dataframe that was imported to _DataTidy.txt_ contained 180 observations of 81 variables. 
   
-The reamining feature-vector variables are:
+The remaining feature-vector variables are:
 
  [1] "tBodyAcc-mean()-X"              
  [2] "tBodyAcc-mean()-Y"              
