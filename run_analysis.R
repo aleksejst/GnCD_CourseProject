@@ -59,7 +59,7 @@ dat$Activity <- activities[dat$Activity]
 # Filters the dataframe leaving only columns related to vasriables 
 # that contain mean or standard deviation data for measurements
 # as well as subject and activity data
-dat <- dat[, grep("mean()|std()|Subject|Activity", 
+dat <- dat[, grep("mean()|std()|meanFreq()|Subject|Activity", 
                  names(dat))]
 
 # Aggregates the data by calculating mean values of variables for each 
