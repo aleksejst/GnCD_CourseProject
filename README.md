@@ -16,6 +16,7 @@ The purpose of the project was to demonstrate the ability to collect, work with,
 The source data used in this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone during an experiment with a group of 30 volunteers performing a set of different activities.
 
 The dataset obtained in the abovementioned experiment is partitioned into two sets: test and Training and is available here:
+
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 The archive containing the collected data also contains more thorough description of it. Please refer to _README.txt_ (located in the archive) for more details 
@@ -33,6 +34,7 @@ R script is included in this repository as: _run_analysis.R_
 
 Dataset containing aggregated results is included in this repository: _DataTidy.txt_
 >__NOTE:__ If you want to import the dataset to R, the following code is suggested:
+>
 >`dataTidy <- read.table(".\\DataTidy.txt", header=TRUE)` 
 
 
