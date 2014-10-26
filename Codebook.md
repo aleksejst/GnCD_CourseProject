@@ -52,9 +52,9 @@ The resulting dataframe contained 10299 observations of 563 Variables.
 Only columns containing records of the variables related to __mean__ and __standard deviation__ of certain readings were used to produce the tidy data. Filtering of the variables was based on their names. 
 
 The following patterns were used as a filtering criteria
-*Standard Deviation:
+* Standard Deviation:
  * std()
-*Mean:
+* Mean:
  * mean()
  * meanFreq()
 
